@@ -1,0 +1,15 @@
+# Script (8.82.0100 / 28.08.2013) (0x00004010,IDs:4,e,2b;0x0c000002)
+
+lang English
+flash No
+
+cd /Setup/Interfaces/WLAN/Operational
+#    Ifc       Operating     Operation-Mode  Link-LED-Function     Broken-Link-Detection 
+#    -----------------------------------------------------------------------------------------
+set  WLAN-1   {Operating}  No           {Operation-Mode}  Access-Point   {Link-LED-Function}  Normal               {Broken-Link-Detection}  No
+cd /
+
+flash Yes
+
+# done
+exit
